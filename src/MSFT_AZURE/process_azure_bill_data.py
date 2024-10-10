@@ -71,7 +71,7 @@ class Azure_Bill_Data_Processor():
         ############ EDIT NAMES WITH WHAT YOU WANT ##############
         hash_col = ["MeterRegion", "BillingCurrency", "ResourceLocation", "ConsumedService", "ServiceInfo2", "UnitOfMeasure", "ProductOrderName", "OfferId", "IsAzureCreditEligible", "PublisherName", "ChargeType", "Frequency", "PublisherType", "PricingModel", "SubscriptionEnv", "ResourceGroupEnv"]
         spacy_col = ["Product", "PartNumber", "MeterCategory", "MeterSubCategory", "MeterName", "ResourceId", "ResourceName", "AdditionalInfo", "PlanName", "benefitId", "benefitName"]
-        numerical_cols = ["Quantity", "Cost"] 
+        numerical_cols = ["Quantity", "Cost"]
 
         # transofrming all interesting features into numerical values
         hex_df = self.azure_bill[hex_col]
